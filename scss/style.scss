@@ -1,0 +1,64 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+@import 'animate';
+
+body {
+  overflow: hidden;
+  font-family: 'software_tester_7regular';
+  background: linear-gradient(180deg, #4E35C7, #E05571);
+}
+
+.h1-main{
+  text-align: center;
+  color: #fff;
+  margin: 10px 0 0;
+  font-size: 40px;
+}
+
+.container {
+  width: 1280px;
+  margin: auto;
+  cursor: pointer;
+}
+
+#timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#timer h1 {
+  user-select: none;
+  color: #fff;
+  font-size: 8vw;
+}
+
+@media(max-width:1280px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media(max-width:768px) {
+  #timer h1 {
+    font-size: 4rem;
+  }
+}
+
+@media(max-width:480px) {
+  #timer h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media(max-width:320px) {
+  #timer h1 {
+    font-size: 3rem;
+  }
+}
+
+
+@import 'media';
